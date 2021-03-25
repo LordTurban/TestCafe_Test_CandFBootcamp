@@ -10,7 +10,7 @@ Dependencies:
 
 -Node.js: Install Node.js globally in your system. Open a Terminal in project root folder, type `npm init` to update package.json file.
 
--TestCafé: Open a Terminal in project root folder, type `npm install -g testcafe` to create a library and then, type `npm install testcafe` to install locally in the project an generate the node_modules folder files.
+-TestCafé: Open a Terminal in project root folder, type `npm install -g testcafe` to create a library and then, type `npm install testcafe` to install locally in the project and generate the node_modules folder files.
 
 How to Run:
 
