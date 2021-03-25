@@ -10,6 +10,7 @@ How to Run:
 
 Open a Terminal in project root folder.
 Type `testcafe <targetbrowser> <testfile.js>`
+
 -\<tergetbrowser>: Your web browser to be used to do the test.
 
 -\<testfile.js>: The JavaScript file with the test code. If you want to run all the tests in a folder, just type de folder name.
