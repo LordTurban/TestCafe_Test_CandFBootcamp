@@ -10,10 +10,10 @@ class Login{
         this.errorMessage = Selector ('.error_msg')
     }
 
-    loginProcess = async() => {
+    loginProcess = async(email_, password_) => {
         await t
-            .typeText(this.emailField, 'myuser')
-            .typeText(this.passwordField, 'mypassword')
+            .typeText(this.emailField, email_)
+            .typeText(this.passwordField, password_)
             .click(this.loginButton)
             .wait(20000)
     }
