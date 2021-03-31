@@ -1,4 +1,10 @@
 {
-    "valid_email": "email@emaildir.com",
-    "valid_password": "password"
+    "user": {
+        "valid_email": "email@emaildir.com",
+        "valid_password": "password"
+    },
+    "admin": {
+        "valid_email": "admin@emaildir.com",
+        "valid_password": "adminpass"
+    }
 }

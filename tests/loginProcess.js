@@ -8,6 +8,6 @@ fixture `Login Test`.page(`https://todoist.com/es`)
 
 test(`Show me an error in login process`, async t =>{
     await Home.clickLogin()
-    await Login.loginProcess(testData.valid_email, testData.valid_password);
+    await Login.loginProcess(testData.user);
     await t.expect(Dashboard.searchBar.exists).ok()
 })

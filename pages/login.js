@@ -1,4 +1,4 @@
-import { t, Selector} from 'testcafe'
+import { t, Selector } from 'testcafe'
 
 class Login{
 
@@ -10,12 +10,12 @@ class Login{
         this.errorMessage = Selector ('.error_msg')
     }
 
-    loginProcess = async(email_, password_) => {
+    loginProcess = async(credentials) => {
         await t
-            .typeText(this.emailField, email_)
-            .typeText(this.passwordField, password_)
+            .typeText(this.emailField, credentials.valid_email, {paste:true})
+            .typeText(this.passwordField, credentials.valid_password, {paste:true})
             .click(this.loginButton)
-            .wait(20000)
+            .wait(2000)
     }
 
     loginProcessQuick = async () => {
